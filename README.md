@@ -1,1 +1,0 @@
-# static-chinese-lesssons

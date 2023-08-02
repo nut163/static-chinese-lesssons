@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle }}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/main.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <!-- Navigation links will be loaded here by main.js -->
+    </nav>
+
+    <main id="main-content">
+        <h1>Weekly Targets</h1>
+        <div id="course-content">
+            <!-- Course content will be loaded here by main.js -->
+        </div>
+    </main>
+
+    <script>
+        // Load navigation links
+        navigateToPage('weekly_targets');
+
+        // Load course content
+        loadCourseContent({{ pageContent }});
+    </script>
+</body>
+</html>

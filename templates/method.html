@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pageTitle }}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/main.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <!-- Navigation links will be loaded here by main.js -->
+    </nav>
+
+    <main id="main-content">
+        <h1>Our Method</h1>
+        <p>{{ pageContent.methodIntro }}</p>
+
+        <h2>Spaced Repetition</h2>
+        <p>{{ pageContent.spacedRepetition }}</p>
+
+        <h2>Topic Grouping</h2>
+        <p>{{ pageContent.topicGrouping }}</p>
+
+        <h2>Cultural Facts</h2>
+        <p>{{ pageContent.culturalFacts }}</p>
+    </main>
+
+    <script>
+        // Load the course content when the page loads
+        window.onload = function() {
+            loadCourseContent('method');
+        };
+    </script>
+</body>
+</html>
